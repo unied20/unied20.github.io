@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+* {
+  padding: none;
+  margin-top: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+html {
+  max-width: 100%;
+
+  background-color: whitesmoke;
+}
+
+body {
+  max-width: 100%;
+
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+#hero {
+  margin-left: 60px;
+}
+#hero h2 {
+  font-family: "Ubuntu";
+  font-size: 40px;
+  color: #f0515f;
+}
+#hero p {
+  font-weight: 300;
+  font-family: "Ubuntu";
+  font-size: 18px;
+  max-width: 700px;
+}
+#hero p:last-child {
+  font-weight: 300;
+  font-family: "Ubuntu";
+  font-size: 18px;
+  max-width: 700px;
+  color: #f0515f;
+  text-decoration: underline;
+}
+.contain {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  display: inline;
+}
+
+header {
+  background-color: white;
+  height: 90px;
+}
+header::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+nav {
+  float: right;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14.5px;
+  letter-spacing: 0em;
+  text-transform: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  color: #f0515f;
+  padding-top: 25px;
+  vertical-align: middle;
+}
+
+nav > ul > li > a {
+  color: #f0515f;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: black;
+}
+
+.ct {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 60;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0em;
+  color: #f0515f;
+  background-color: transparent;
+  border-color: #f0515f;
+  display: inline-block;
+  border-radius: 30px;
+  border: 2px solid #f0515f;
+}
+
+.ct:hover {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 60;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0em;
+  color: white;
+  background-color: #f0515f;
+  border-color: #f0515f;
+  display: inline-block;
+  border-radius: 30px;
+  border: 2px solid #f0515f;
+}
+
+.logo {
+  float: left;
+  margin-left: 80px;
+  padding-top: 8px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: #f0515f;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0pxpx;
+  font-size: 14px;
+  border: none;
+  font-weight: 538;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: grey;
+  padding: 12px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.drop {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.drop-content a {
+  color: grey;
+  padding: 12px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.drop-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu on hover */
+.drop:hover .drop-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.drop:hover .dropbtn {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  height: 420px;
+  display: block;
+  overflow: hidden;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: #363636;
+  line-height: 1.5;
+  font-family: "Ubuntu";
+}
+
+.inner {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+  margin-top: 25px;
+  font-size: 19px;
+}
+
+.inner .footer_fourth {
+  width: calc(19.66666667% -20px);
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+  margin-right: 150px;
+  margin-left: 0px;
+  margin-top: 0px;
+  line-height: 1.8;
+}
+
+.inner .footer_fourth:last-child {
+  margin-right: 0;
+}
+.inner .footer_fourth a {
+  text-decoration: underline;
+}
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+.fa-facebook {
+  background: #3b5998;
+
+  color: white;
+  border: 0px;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border: 0px;
+}
+.fa-instagram {
+  color: white;
+  border: 0px;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+/**
+  
+  
+  San Francisco SF Fonts:
+  
+  
+  
+  */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 900;
+  src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
+}
+
+/** Bold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
+}
+
+/** Thin */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 300;
+  src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
+}
+
+/** Ultralight */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 100;
+  src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
+}
+
+/*---------------------------------------------------------------------------*
+     * SF UI Text
+     *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SF-UI-Text-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SF-UI-Text-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SF-UI-Text-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-LightItalic.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SF-UI-Text-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SF-UI-Text-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SF-UI-Text-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-SemiboldItalic.otf");
+}
+
+/** Ultrathin */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 100;
+  src: url("https://sf.abarba.me/SF-UI-Text-Ultrathin.otf");
+}
+
+/** Ultrathin Italic */
+@font-face {
+  font-family: "SF Text";
+  font-weight: 100;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SF-UI-Text-UltrathinItalic.otf");
+}
+
+/*---------------------------------------------------------------------------*
+     * SF Mono
+     *---------------------------------------------------------------------------*/
+
+/** Bold */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 700;
+  src: url("https://sf.abarba.me/SFMono-Bold.otf");
+}
+
+/** Bold Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-BoldItalic.otf");
+}
+
+/** Heavy */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 800;
+  src: url("https://sf.abarba.me/SFMono-Heavy.otf");
+}
+
+/** Heavy Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 800;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-HeavyItalic.otf");
+}
+
+/** Light */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 200;
+  src: url("https://sf.abarba.me/SFMono-Light.otf");
+}
+
+/** Light Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 200;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-LightItalic.otf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 500;
+  src: url("https://sf.abarba.me/SFMono-Medium.otf");
+}
+
+/** Medium Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-MediumItalic.otf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 400;
+  src: url("https://sf.abarba.me/SFMono-Regular.otf");
+}
+
+/** Regular Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-RegularItalic.otf");
+}
+
+/** Semibold */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 600;
+  src: url("https://sf.abarba.me/SFMono-Semibold.otf");
+}
+
+/** Semibold Italic */
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://sf.abarba.me/SFMono-SemiboldItalic.otf");
+}
+
+.rightside {
+  position: fixed;
+  top: 25%;
+  right: 0%;
+}
+
+.rightside li {
+  list-style-type: none;
+  padding: 15px;
+  transition: 0.6s;
+  color: white;
+  position: relative;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.rightside li i {
+  font-size: 40px;
+}
+
+.rightside li:hover {
+  padding: 15px 5px;
+}
+
+.rightside li:nth-child(3) {
+  background: #3b5998;
+
+  color: white;
+  border: 0px;
+}
+.rightside ul {
+  width: 100px;
+
+  overflow: hidden;
+}
+.rightside li:nth-child(2) {
+  background: #007bb5;
+  color: white;
+  border: 0px;
+}
+
+.rightside li:nth-child(1) {
+  color: white;
+  border: 0px;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.fa {
+  padding: 2px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.fa-facebook {
+  background: #3b5998;
+
+  color: white;
+  border: 0px;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border: 0px;
+}
+.fa-instagram {
+  color: white;
+  border: 0px;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+#mobileShow {
+  display: none;
+}
+
+#mobileShow {
+  display: none;
+}
+/* Smartphone Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #desktop {
+    display: none;
+  }
+  #mobileShow {
+    display: inline;
+  }
+  .fa {
+    padding: 5px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+}
